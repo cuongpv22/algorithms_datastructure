@@ -5,11 +5,10 @@ function reverseArr(arrInput,start,end){
     let temp = arrInput[start];  
     arrInput[start] = arrInput[end]; 
     arrInput[end] = temp; 
-      
     // Recursive Function calling 
     reverseArr(arrInput, start + 1, end - 1);
-   
 }
+
 let arr = [1,2,3,3,8,9,7];
 console.log(`Array input : ${arr}`);
 reverseArr(arr,0,arr.length -1);
